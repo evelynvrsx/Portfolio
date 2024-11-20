@@ -1,0 +1,44 @@
+/* General Navbar Styling */
+.navbar {
+    background-color: #F1DFD1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+/* Logo Styling */
+.navbar-logo img {
+    height: 40px;
+}
+
+/* Navigation Links Container */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar-links a {
+    font-size: 24px;
+    color: #615A54;
+}
+
+.navbar-links a:hover {
+    color: #807674;
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.navbar-icons a {
+    margin-left: 10px;
+    font-size: 29px;
+    color: #615A54;
+}
+
+.navbar-icons a:hover {
+    color: #807674;
+}
