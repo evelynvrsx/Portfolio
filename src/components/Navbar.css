@@ -1,44 +1,64 @@
 /* General Navbar Styling */
 .navbar {
     background-color: #F1DFD1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative;
     width: 100%;
+    position: fixed;
     top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 /* Logo Styling */
+.navbar-logo {
+    display: flex;
+    align-items: left;
+}
+
 .navbar-logo img {
     height: 40px;
+    padding: 0;
+}
+
+.navbar-logo img:hover {
+    opacity: 0.7;
 }
 
 /* Navigation Links Container */
 .navbar-links {
     display: flex;
-    gap: 20px;
+    gap: 5rem;
     list-style: none;
 }
 
 .navbar-links a {
-    font-size: 24px;
+    font-size: 1.2rem;
     color: #615A54;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-    color: #807674;
+    color: #958b89;
     text-decoration: underline;
 }
 
 /* Social Icons */
 .navbar-icons a {
-    margin-left: 10px;
-    font-size: 29px;
+    margin-left: 1rem;
+    font-size: 1.5rem;
     color: #615A54;
+    transition: color 0.3s ease;
 }
 
 .navbar-icons a:hover {
-    color: #807674;
+    color: #958b89;
 }
