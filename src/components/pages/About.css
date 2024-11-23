@@ -1,7 +1,8 @@
-/* About content description & header */
+/* About page */
 .about-container {
+    min-height: 60vh;
     background-color: #F1DFD1;
-    padding: 2rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,9 +15,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem;
 }
 
+/* Image */
+.about-image {
+    flex: 1;
+    position: relative;
+    min-width: 150px;
+}
+
+.main-illustration {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+}
+
+/* Text content */
 .about-text {
+    flex: 1;
     max-width: 600px;
 }
 
@@ -24,7 +42,6 @@
     font-size: 3rem;
     color: #4B4634;
     margin-bottom: 0.5rem;
-    margin-top: 5rem;
 }
 
 .about-text h2 {
@@ -39,7 +56,6 @@
     line-height: 1.5;
     color: #4B4634;
     margin-bottom: 1.5rem;
-    margin-top: 0;
 }
 
 /* CV button */
@@ -61,20 +77,24 @@
 /* Scroll circle indicator */
 .scroll-indicator {
     position: absolute;
+    bottom: -2.5rem;
     left: 50%;
-    text-align: center;
     transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .scroll-circle {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
     color: white;
     border-radius: 5rem;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     background-color: #AD9B96;
 }
 
@@ -82,3 +102,28 @@
     display: inline-block;
     line-height: 1.2;
 }
+
+/* Responsive design */
+@media (max-width: 968px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+  
+    .about-image-container {
+      min-width: auto;
+    }
+  
+    .main-illustration {
+      margin: 0 auto;
+    }
+  
+    .about-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-text h2 {
+      font-size: 2rem;
+    }
+  }

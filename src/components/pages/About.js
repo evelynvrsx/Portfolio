@@ -5,6 +5,10 @@ function About() {
   return (
     <div className='about-container'>
       <div className='about-content'>
+        <div className='about-image'>
+          <img src='./about_illustration.png' alt='about page illustration' className="main-illustration"/>
+        </div>
+
         <div className='about-text'>
           <h1>HELLO,</h1>
           <h2>I'M EVELYN</h2>
