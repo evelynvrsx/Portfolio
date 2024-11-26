@@ -1,0 +1,130 @@
+/* About page */
+.about-container {
+    min-height: 60vh;
+    background-color: #F1DFD1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+/* Image */
+.about-image {
+    top: 1.5rem;
+    flex: 1;
+    position: relative;
+    min-width: 150px;
+}
+
+.main-illustration {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+}
+
+/* Text content */
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text h1 {
+    font-size: 3rem;
+    color: #4B4634;
+    margin-bottom: 0.5rem;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #4B4634;
+    margin-bottom: 1.2rem;
+    margin-top: 0;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #4B4634;
+    margin-bottom: 1.5rem;
+}
+
+/* CV button */
+.cv-button {
+    background-color: #C2ACAE;
+    color: #3A3334;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #9e8d8f;
+}
+
+/* Scroll circle indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll-circle {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    color: white;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: #AD9B96;
+}
+
+.scroll-circle span {
+    display: inline-block;
+    line-height: 1.2;
+}
+
+/* Responsive design */
+@media (max-width: 968px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+  
+    .about-image-container {
+      min-width: auto;
+    }
+  
+    .main-illustration {
+      margin: 0 auto;
+    }
+  
+    .about-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-text h2 {
+      font-size: 2rem;
+    }
+  }
