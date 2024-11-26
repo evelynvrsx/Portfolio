@@ -1,0 +1,36 @@
+.projects-slider {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .project-card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .project-card h3 {
+    margin: 10px 0;
+  }
+  
+  .project-card .tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .project-card .tag {
+    background: #eee;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
