@@ -31,7 +31,7 @@ export default function Projects() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 2
         }
       },
       {
@@ -51,6 +51,7 @@ export default function Projects() {
         <img src='./chips_challenge.png' alt='chips challenge' className='w-100'/>
         <div className='card-body'>
           <h3>Chips challenge</h3>
+          <p>Description here</p>
         </div>
       </div>
       <div className='project-card'>
