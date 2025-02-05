@@ -1,7 +1,8 @@
 .projects-container {
-  padding: 40px 20px;
+  padding: 40px 80px;
   background-color: #f9f9f9;
   text-align: left;
+  overflow: hidden;
 }
 
 .projects-container h1 {
@@ -12,11 +13,10 @@
 
 .projects-slider {
   width: 80%;
-  margin: 0 auto;
 }
 
 .project-card {
-  padding: 20px;
+  padding: 10px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,6 @@
 
 .project-card img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
   object-fit: cover;
@@ -57,7 +56,6 @@
 .project-card .tag {
   background: #eee;
   padding: 5px 10px;
-  margin: 5px;
   border-radius: 5px;
   font-size: 0.9em;
 }
@@ -73,7 +71,6 @@
 .slick-arrow {
   background-color: #5A5541 !important;
   border-radius: 50%;
-  opacity: 0.8;
   transition: background-color 0.3s ease;
 }
 
