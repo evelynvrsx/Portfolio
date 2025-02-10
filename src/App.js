@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-//import { Routes, Route } from 'react-router-dom';
 
 // import pages
 import About from './components/pages/About';
@@ -19,15 +18,6 @@ function App() {
         <section id="skills"><Skills /></section>
         <section id="contact"><Contact /></section>
       </main>
-      
-      
-      {/* <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>  */}
     </div>
   );
 }
