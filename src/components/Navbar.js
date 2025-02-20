@@ -10,28 +10,6 @@ function Navbar() {
   return (
     <nav className='navbar'>
         <div className='navbar-container'>
-            {/* Logo
-            <Link to="/" className='navbar-logo'>
-                <img src='/logo.png' alt='Logo'/>
-            </Link>
-
-            {/* Navigation Links */}{/*}
-            <ul className='navbar-links'>
-                <li>
-                    <Link to='/about'>About</Link>
-                </li>
-                <li>
-                    <Link to='/projects'>Projects</Link>
-                </li>
-                <li>
-                    <Link to='/skills'>Skills</Link>
-                </li>
-                <li>
-                    <Link to='/contact'>Contact</Link>
-                </li>
-            </ul> */}
-
-
             {/* Logo */}
             <a href="#about" className="navbar-logo">
                 <img src="/logo.png" alt="Logo" />
