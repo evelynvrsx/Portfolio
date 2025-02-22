@@ -185,6 +185,38 @@
   border-radius: 10px;
 }
 
+/* External link button */
+.external-link-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #807674; /* Trello blue color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.external-link-button:hover {
+  background-color: #9e8d8f; /* Darker blue on hover */
+}
+
+/* YouTube button */
+.youtube-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #807674; /* YouTube red color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.youtube-button:hover {
+  background-color: #9e8d8f; /* Darker red on hover */
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .projects-container {
