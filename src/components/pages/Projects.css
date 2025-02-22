@@ -78,7 +78,7 @@
   margin-top: 10px; 
 }
 
-/* Optional: Adjust the size and spacing of the dots */
+/* Slick dots */
 .slick-dots li {
   margin: 0 5px; 
 }
@@ -105,6 +105,32 @@
 /* Add gaps between slides */
 .slick-slide {
   padding: 1rem 0.5rem; /* Add padding to create gaps between cards */
+}
+
+/* Style the tags container for project cards */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Spacing between tags */
+  margin-top: 10px; /* Spacing above the tags */
+}
+
+/* Style individual tags */
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #E1D6D4;
+  color: #4B4634; 
+  border-radius: 15px; 
+  font-size: 0.8em;
+  border: 1px solid #4B4634;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for tags */
+.tag:hover {
+  background-color: #4B4634;
+  color: #E1D6D4; 
 }
 
 /* Modal Styles */
