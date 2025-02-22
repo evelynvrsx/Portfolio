@@ -1,0 +1,245 @@
+/* Ensure the slider container doesn't add extra space */
+.slick-list {
+  margin: 0 !important; /* Compensate for padding */
+  padding-bottom: 0 !important; /* Remove any padding at the bottom */
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center !important; /* Align cards and dots properly */
+}
+
+.projects-container {
+  padding: 5rem 9rem;
+  background-color: #f9f9f9;
+  text-align: left;
+  overflow: hidden;
+  display: block;
+}
+
+.projects-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #4B4634;
+  text-align: left;
+  font-family: Merriweather;
+}
+
+.project-card {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  background: #E1D6D4;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0; /* Card starting cut off position */
+  cursor: pointer; /* Indicate that the card is clickable */
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  height: auto; /* Set a fixed height for images */
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  margin: 1rem;
+  color: #4B4634;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #807674;
+  margin: 1rem;
+}
+
+.project-card .tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Add gap between tags */
+}
+
+/* Adjust the slick dots position */
+.slick-dots {
+  position: relative; 
+  bottom: 0; 
+  margin-top: 10px; 
+}
+
+/* Optional: Adjust the size and spacing of the dots */
+.slick-dots li {
+  margin: 0 5px; 
+}
+
+.slick-dots li button:before {
+  color: #807674;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #5A5541; 
+}
+
+.slick-arrow {
+  background-color: #5A5541 !important;
+  border-radius: 50%;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.slick-arrow:hover {
+  background-color: #807674 !important;
+}
+
+/* Add gaps between slides */
+.slick-slide {
+  padding: 1rem 0.5rem; /* Add padding to create gaps between cards */
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #E1D6D4;
+  color: #4B4634;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 50rem;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #4B4634;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+.additional-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.additional-images img {
+  width: 100%;
+  max-width: 24rem;
+  border-radius: 8px;
+}
+
+/* Download button inside cards */
+.download-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #807674; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #9e8d8f;
+}
+
+/* Video styling */
+.project-video {
+  width: 100%;
+  max-width: 50rem; /* Adjust the maximum width as needed */
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* External link button */
+.external-link-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #807674; /* Trello blue color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.external-link-button:hover {
+  background-color: #9e8d8f; /* Darker blue on hover */
+}
+
+/* YouTube button */
+.youtube-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #807674; /* YouTube red color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.youtube-button:hover {
+  background-color: #9e8d8f; /* Darker red on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .projects-container {
+    padding: 4.5rem 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 4.5rem 2rem;
+  }
+
+  .project-card {
+    margin: 0 10px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    padding: 4.5rem 1rem;
+  }
+
+  .project-card {
+    margin: 0 5px; /* Further adjust margin for mobile */
+  }
+}
