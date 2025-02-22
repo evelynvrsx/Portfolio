@@ -1,3 +1,24 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Imported fonts */
+@font-face {
+    font-family: 'Merriweather';
+    src: url('./fonts/Merriweather-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('./fonts/Jost-Regular.ttf') format('truetype');
+}
+
+/* Fonts usage */
+body, button {
+    font-family: 'Jost', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
