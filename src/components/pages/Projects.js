@@ -156,19 +156,19 @@ export default function Projects() {
             {selectedProject.youtubeLink && (
               <a
                 href={selectedProject.youtubeLink}
-                target="_blank" // Open the link in a new tab
-                rel="noopener noreferrer" // Recommended for security
+                target="_blank" 
+                rel="noopener noreferrer" 
                 className="youtube-button"
               >
                 Watch on YouTube
               </a>
             )}
-            {/* Add a button for the external link (e.g., Trello) */}
+            {/* Add a button for the external link */}
             {selectedProject.externalLink && (
               <a
                 href={selectedProject.externalLink}
-                target="_blank" // Open the link in a new tab
-                rel="noopener noreferrer" // Recommended for security
+                target="_blank" 
+                rel="noopener noreferrer" 
                 className="external-link-button"
               >
                 View on Trello
