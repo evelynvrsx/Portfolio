@@ -1,89 +1,101 @@
 /* Skills Container */
 .skills-container {
-    padding: 2rem 9rem;
-    background-color: #F8F4F1;
-    text-align: left;
-  }
+  padding: 2rem 9rem;
+  background-color: #F8F4F1;
+  text-align: left;
+}
+
+.skills-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #4B4634;
+  text-align: left;
+  font-family: Merriweather;
+}
+
+/* Skills Content Wrapper */
+.skills-content-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Skills Sections */
+.skills-sections {
+  flex: 1;
+}
+
+/* Skills Section */
+.skills-section {
+  margin-bottom: 1.5rem;
+}
+
+.skills-section h2 {
+  font-size: 1.2rem;
+  color: #4B4634;
+  background-color: #A38F86;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.skills-section h2:hover {
+  color: #726568;
+}
+
+/* Icons */
+.section-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Skills Content */
+.skills-content {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #CEC6C3;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #4B4634;
+}
+
+.skills-content ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1em;
+  line-height: 1.6;
+}
   
-  .skills-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #4B4634;
-    text-align: left;
-    font-family: Merriweather;
-  }
+/* Different Colors for Each Section */
+.skills-section.web-development h2 {
+  background-color: #ac9a92; 
+}
+
+.skills-section.programming-languages h2 {
+  background-color: #D4B2A9; 
+}
   
-  /* Skills Content Wrapper */
-  .skills-content-wrapper {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  /* Skills Sections */
-  .skills-sections {
-    flex: 1;
-  }
-  
-  /* Skills Section */
-  .skills-section {
-    margin-bottom: 1.5rem;
-  }
-  
-  .skills-section h2 {
-    font-size: 1.2rem;
-    color: #4B4634;
-    background-color: #A38F86;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .skills-section h2:hover {
-    background-color: #9e8d8f;
-  }
-  
-  /* Icons */
-  .section-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  
-  /* Skills Content */
-  .skills-content {
-    margin-top: 1rem;
-    padding: 1rem;
-    background: #CEC6C3;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .skills-content ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    color: #807674;
-  }
-  
-  .skills-content ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1em;
-    line-height: 1.6;
-  }
-  
-  /* Different Colors for Each Section */
-  .skills-section.web-development h2 {
-    background-color: #A38F86; /* Web Development color */
-  }
-  
-  .skills-section.programming-languages h2 {
-    background-color: #D4B2A9; /* Programming Languages color */
-  }
-  
-  .skills-section.project-management h2 {
-    background-color: #E8D8C9; /* Project Management color */
-  }
+.skills-section.project-management h2 {
+  background-color: #E8D8C9; 
+}
+
+.skills-section.game-development h2 {
+  background-color: #e5e0dc;
+}
+
+.skills-section.design-and-prototyping h2 {
+  background-color: #cecece;
+}
+
+.skills-section.devops-and-tools h2 {
+  background-color: #b2bfc5;
+}
   
 /* Image on the Right */
 .skills-image {
@@ -91,7 +103,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
 }
   
 .skills-image img {
@@ -100,17 +111,17 @@
     border-radius: 10px;
 }
   
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .skills-container {
-      padding: 4.5rem 2rem;
-    }
-  
-    .skills-content-wrapper {
-      flex-direction: column;
-    }
-  
-    .skills-image {
-      margin-top: 2rem;
-    }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 4.5rem 2rem;
   }
+
+  .skills-content-wrapper {
+    flex-direction: column;
+  }
+
+  .skills-image {
+    margin-top: 2rem;
+  }
+}

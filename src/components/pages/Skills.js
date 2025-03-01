@@ -14,9 +14,11 @@ export default function Skills() {
   const webDevIcon = '/web-dev-icon.png';
   const programmingIcon = '/programming-icon.png';
   const projectMgmtIcon = '/project-mgmt-icon.png';
+  const gameDevIcon = '/game-dev-icon.png';
   const webDevImage = '/web-dev-image.jpg';
   const programmingImage = '/programming-image.jpg';
   const projectMgmtImage = '/project-mgmt-image.jpg';
+
 
   // Determine which image to display based on the open section
   const getImage = () => {
@@ -48,11 +50,12 @@ export default function Skills() {
             {openSection === "web-development" && (
               <div className="skills-content">
                 <ul>
-                  <li>HTML, CSS, JavaScript</li>
-                  <li>React, Node.js, Express</li>
-                  <li>Responsive Design</li>
-                  <li>REST APIs</li>
-                  <li>Version Control (Git)</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
                 </ul>
               </div>
             )}
@@ -72,6 +75,7 @@ export default function Skills() {
                   <li>C++</li>
                   <li>JavaScript</li>
                   <li>PHP</li>
+                  <li>C</li>
                 </ul>
               </div>
             )}
@@ -86,20 +90,67 @@ export default function Skills() {
             {openSection === "project-management" && (
               <div className="skills-content">
                 <ul>
-                  <li>Agile Methodology</li>
-                  <li>Scrum Framework</li>
-                  <li>Trello, Jira</li>
-                  <li>Team Collaboration</li>
-                  <li>Time Management</li>
+                  <li>Trello</li>
+                  <li>Git (GitHub, GitLab)</li>
                 </ul>
               </div>
             )}
           </div>
+
+          {/* Game Development Section */}
+          <div className="skills-section game-development">
+            <h2 onClick={() => toggleSection("game-development")}>
+              <img src={gameDevIcon} alt="Game Development Icon" className="section-icon" />
+              Game Development {openSection === "game-development" ? "▼" : "▶"}
+            </h2>
+            {openSection === "game-development" && (
+              <div className="skills-content">
+                <ul>
+                  <li>Unreal Engine 5</li>
+                  <li>Processing</li>
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* Design and Prototyping Section */}
+          <div className="skills-section design-and-prototyping">
+            <h2 onClick={() => toggleSection("design-and-prototyping")}>
+              <img src={projectMgmtIcon} alt="Design and Prototyping Icon" className="section-icon" />
+              Design and Prototyping {openSection === "design-and-prototyping" ? "▼" : "▶"}
+            </h2>
+            {openSection === "design-and-prototyping" && (
+              <div className="skills-content">
+                <ul>
+                  <li>Figma</li>
+                  <li>Blender</li>
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* DevOps and Tools Section */}
+          <div className="skills-section devops-and-tools">
+            <h2 onClick={() => toggleSection("devops-and-tools")}>
+              <img src={projectMgmtIcon} alt="DevOps and Tools Icon" className="section-icon" />
+              DevOps and Tools {openSection === "devops-and-tools" ? "▼" : "▶"}
+            </h2>
+            {openSection === "devops-and-tools" && (
+              <div className="skills-content">
+                <ul>
+                  <li>AWS</li>
+                  <li>Docker</li>
+                </ul>
+              </div>
+            )}
+          </div>
+
+          
         </div>
 
         {/* Image on the Right */}
         <div className="skills-image">
-          <img src={getImage()} alt="Skills Image" />
+          <img src={getImage()} alt="Skills" />
         </div>
       </div>
     </div>
