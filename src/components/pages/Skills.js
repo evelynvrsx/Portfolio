@@ -8,13 +8,22 @@ export default function Skills() {
     setOpenSection((prevSection) => (prevSection === section ? null : section));
   };
 
+  /* Icons */
   const webDevIcon = '/web-dev-icon.png';
   const programmingIcon = '/programming-icon.png';
   const projectMgmtIcon = '/project-mgmt-icon.png';
   const gameDevIcon = '/game-dev-icon.png';
-  const webDevImage = '/web-dev-image.jpg';
+  const designProtIcon = '/design-prototype-icon.png';
+  const devopsToolsIcon = '/devops-icon.png';
+
+  /* Images */
+  const webDevImage = '/web-dev-image.png';
   const programmingImage = '/programming-image.jpg';
   const projectMgmtImage = '/project-mgmt-image.jpg';
+  const gameDevImage = '';
+  const designProtImage = '';
+  const devopsToolsImage = '';
+  const defaultImage = '/default-image.png';
 
   const getImage = () => {
     switch (openSection) {
@@ -24,8 +33,14 @@ export default function Skills() {
         return programmingImage;
       case "project-management":
         return projectMgmtImage;
+      case "game-development":
+        return gameDevImage;
+      case "design-and-prototyping":
+        return designProtImage;
+      case "devops-and-tools":
+        return devopsToolsImage;
       default:
-        return webDevImage;
+        return defaultImage;
     }
   };
 
@@ -47,8 +62,7 @@ export default function Skills() {
             {openSection === "web-development" && (
               <div className="skills-content">
                 <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
+                  <li>HTML, CSS</li>
                   <li>React</li>
                   <li>Node.js</li>
                   <li>PHP</li>
@@ -126,7 +140,7 @@ export default function Skills() {
               onClick={() => toggleSection("design-and-prototyping")}
               className={openSection === "design-and-prototyping" ? "open" : ""}
             >
-              <img src={projectMgmtIcon} alt="Design and Prototyping Icon" className="section-icon" />
+              <img src={designProtIcon} alt="Design and Prototyping Icon" className="section-icon" />
               Design and Prototyping {openSection === "design-and-prototyping" ? "▼" : "▶"}
             </h2>
             {openSection === "design-and-prototyping" && (
@@ -145,7 +159,7 @@ export default function Skills() {
               onClick={() => toggleSection("devops-and-tools")}
               className={openSection === "devops-and-tools" ? "open" : ""}
             >
-              <img src={projectMgmtIcon} alt="DevOps and Tools Icon" className="section-icon" />
+              <img src={devopsToolsIcon} alt="DevOps and Tools Icon" className="section-icon" />
               DevOps and Tools {openSection === "devops-and-tools" ? "▼" : "▶"}
             </h2>
             {openSection === "devops-and-tools" && (
