@@ -21,7 +21,7 @@
 
 /* Skills Sections */
 .skills-sections {
-  flex: 1;
+  flex: 1.5;
 }
 
 /* Skills Section */
@@ -29,6 +29,7 @@
   margin-bottom: 1.5rem;
 }
 
+/* Skills Section */
 .skills-section h2 {
   font-size: 1.2rem;
   color: #4B4634;
@@ -37,11 +38,24 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 5px; /* Default border radius for all corners */
+  margin-bottom: 0;
+}
+
+.skills-section h2.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* When the section is open, remove the bottom border radius */
+.skills-section h2.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .skills-section h2:hover {
   color: #726568;
+  cursor: pointer;
 }
 
 /* Icons */
@@ -53,10 +67,11 @@
 
 /* Skills Content */
 .skills-content {
-  margin-top: 1rem;
   padding: 1rem;
-  background: #CEC6C3;
-  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -71,7 +86,7 @@
   font-size: 1em;
   line-height: 1.6;
 }
-  
+
 /* Different Colors for Each Section */
 .skills-section.web-development h2 {
   background-color: #ac9a92; 
@@ -80,7 +95,7 @@
 .skills-section.programming-languages h2 {
   background-color: #D4B2A9; 
 }
-  
+
 .skills-section.project-management h2 {
   background-color: #E8D8C9; 
 }
@@ -96,21 +111,47 @@
 .skills-section.devops-and-tools h2 {
   background-color: #b2bfc5;
 }
-  
+
+/* Different background colors for each dropdown's skills content */
+.skills-section.web-development .skills-content {
+  background-color: #f0e5e0; 
+}
+
+.skills-section.programming-languages .skills-content {
+  background-color: #f5e0d9; 
+}
+
+.skills-section.project-management .skills-content {
+  background-color: #f5f0e0; 
+}
+
+.skills-section.game-development .skills-content {
+  background-color: #edeae7; 
+}
+
+.skills-section.design-and-prototyping .skills-content {
+  background-color: #e8e8e8; 
+}
+
+.skills-section.devops-and-tools .skills-content {
+  background-color: #eaeeef; 
+}
+
 /* Image on the Right */
 .skills-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: stretch; 
 }
-  
+
 .skills-image img {
-    max-width: 100%;
-    height: 100%;
-    border-radius: 10px;
+  max-width: 100%;
+  height: 100%; 
+  border-radius: 10px;
+  object-fit: cover; 
 }
-  
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .skills-container {

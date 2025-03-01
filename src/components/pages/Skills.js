@@ -2,15 +2,12 @@ import React, { useState } from 'react';
 import './Skills.css';
 
 export default function Skills() {
-  // State to manage which sections are open
   const [openSection, setOpenSection] = useState("web-development");
 
-  // Function to toggle sections
   const toggleSection = (section) => {
     setOpenSection((prevSection) => (prevSection === section ? null : section));
   };
 
-  // Paths to images and icons in the public folder
   const webDevIcon = '/web-dev-icon.png';
   const programmingIcon = '/programming-icon.png';
   const projectMgmtIcon = '/project-mgmt-icon.png';
@@ -19,8 +16,6 @@ export default function Skills() {
   const programmingImage = '/programming-image.jpg';
   const projectMgmtImage = '/project-mgmt-image.jpg';
 
-
-  // Determine which image to display based on the open section
   const getImage = () => {
     switch (openSection) {
       case "web-development":
@@ -30,7 +25,7 @@ export default function Skills() {
       case "project-management":
         return projectMgmtImage;
       default:
-        return webDevImage; // Default image
+        return webDevImage;
     }
   };
 
@@ -39,11 +34,13 @@ export default function Skills() {
       <h1>SKILLS</h1>
 
       <div className="skills-content-wrapper">
-        {/* Dropdown Sections */}
         <div className="skills-sections">
           {/* Web Development Section */}
           <div className="skills-section web-development">
-            <h2 onClick={() => toggleSection("web-development")}>
+            <h2
+              onClick={() => toggleSection("web-development")}
+              className={openSection === "web-development" ? "open" : ""}
+            >
               <img src={webDevIcon} alt="Web Development Icon" className="section-icon" />
               Web Development {openSection === "web-development" ? "▼" : "▶"}
             </h2>
@@ -61,9 +58,13 @@ export default function Skills() {
             )}
           </div>
 
+          {/* Repeat for other sections */}
           {/* Programming Languages Section */}
           <div className="skills-section programming-languages">
-            <h2 onClick={() => toggleSection("programming-languages")}>
+            <h2
+              onClick={() => toggleSection("programming-languages")}
+              className={openSection === "programming-languages" ? "open" : ""}
+            >
               <img src={programmingIcon} alt="Programming Languages Icon" className="section-icon" />
               Programming Languages {openSection === "programming-languages" ? "▼" : "▶"}
             </h2>
@@ -83,7 +84,10 @@ export default function Skills() {
 
           {/* Project Management Section */}
           <div className="skills-section project-management">
-            <h2 onClick={() => toggleSection("project-management")}>
+            <h2
+              onClick={() => toggleSection("project-management")}
+              className={openSection === "project-management" ? "open" : ""}
+            >
               <img src={projectMgmtIcon} alt="Project Management Icon" className="section-icon" />
               Project Management {openSection === "project-management" ? "▼" : "▶"}
             </h2>
@@ -99,7 +103,10 @@ export default function Skills() {
 
           {/* Game Development Section */}
           <div className="skills-section game-development">
-            <h2 onClick={() => toggleSection("game-development")}>
+            <h2
+              onClick={() => toggleSection("game-development")}
+              className={openSection === "game-development" ? "open" : ""}
+            >
               <img src={gameDevIcon} alt="Game Development Icon" className="section-icon" />
               Game Development {openSection === "game-development" ? "▼" : "▶"}
             </h2>
@@ -115,7 +122,10 @@ export default function Skills() {
 
           {/* Design and Prototyping Section */}
           <div className="skills-section design-and-prototyping">
-            <h2 onClick={() => toggleSection("design-and-prototyping")}>
+            <h2
+              onClick={() => toggleSection("design-and-prototyping")}
+              className={openSection === "design-and-prototyping" ? "open" : ""}
+            >
               <img src={projectMgmtIcon} alt="Design and Prototyping Icon" className="section-icon" />
               Design and Prototyping {openSection === "design-and-prototyping" ? "▼" : "▶"}
             </h2>
@@ -131,7 +141,10 @@ export default function Skills() {
 
           {/* DevOps and Tools Section */}
           <div className="skills-section devops-and-tools">
-            <h2 onClick={() => toggleSection("devops-and-tools")}>
+            <h2
+              onClick={() => toggleSection("devops-and-tools")}
+              className={openSection === "devops-and-tools" ? "open" : ""}
+            >
               <img src={projectMgmtIcon} alt="DevOps and Tools Icon" className="section-icon" />
               DevOps and Tools {openSection === "devops-and-tools" ? "▼" : "▶"}
             </h2>
@@ -144,8 +157,6 @@ export default function Skills() {
               </div>
             )}
           </div>
-
-          
         </div>
 
         {/* Image on the Right */}
