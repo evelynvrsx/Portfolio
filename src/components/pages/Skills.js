@@ -18,11 +18,11 @@ export default function Skills() {
 
   /* Images */
   const webDevImage = '/web-dev-image.png';
-  const programmingImage = '/programming-image.jpg';
-  const projectMgmtImage = '/project-mgmt-image.jpg';
-  const gameDevImage = '';
-  const designProtImage = '';
-  const devopsToolsImage = '';
+  const programmingImage = '/programming-image.png';
+  const projectMgmtImage = '/project-mgmt-image.png';
+  const gameDevImage = '/game-dev-image.png';
+  const designProtImage = '/design-prot-image.png';
+  const devopsToolsImage = '/devops-tools-image.png';
   const defaultImage = '/default-image.png';
 
   const getImage = () => {
