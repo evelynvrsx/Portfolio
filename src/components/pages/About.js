@@ -22,7 +22,7 @@ function About() {
             instruments, watching movies, and exploring new places.
           </p>
 
-          <button className='cv-button' onClick={() => window.open('/Internship_CV_2025.pdf')}>Download CV here</button>
+          <button className='cv-button' onClick={() => window.open('/SOT_Evelyn_Salim_CV_2025.pdf')}>Download CV here</button>
         </div>
       </div>
 
